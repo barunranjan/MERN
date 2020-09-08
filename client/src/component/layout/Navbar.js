@@ -4,11 +4,10 @@ import { connect } from "react-redux";
 import { logout } from "../../actions/auth";
 
 const Navbar = ({ auth: { isAuthenticate, loading }, logout }) => {
-  console.log(isAuthenticate);
   const authLinks = (
     <ul>
       <li>
-        <a onClick={logout} to="#!">
+        <a onClick={logout} href="#!">
           <i className="fas fa-sign-out-alt"></i>
           {"  "}
           <span className="hide-sm">Logout</span>
